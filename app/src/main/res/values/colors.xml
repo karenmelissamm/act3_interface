@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background">#0A0E21</color>
+    <color name="background_card">#111328</color>
+    <color name="background_height_age_weight">#1D1E33</color>
+    <color name="background_bottom">#4C4F5E</color>
+    <color name="title_color">#8D8E98</color>
+
+
 </resources>
