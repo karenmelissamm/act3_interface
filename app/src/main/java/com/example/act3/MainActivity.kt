@@ -22,22 +22,6 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        findViewById<MaterialCardView>(R.id.seleccio_home)
-        findViewById<MaterialCardView>(R.id.seleccio_dona)
-
-        card_home.setOnClickListener {
-            card_home.setCardBackgroundColor(Color.BLUE)//cambia de color al seleccionar
-            home_selected=true
-        }
-        card_dona.setOnClickListener {
-            card_dona.setCardBackgroundColor(Color.RED)
-            home_selected=false
-        }
-        card_dona.setOnClickListener { ::card_click }// pasar la funcion por parametros
-
-
-        fun card_click(it:View):Unit{
-        }
 
 
     }

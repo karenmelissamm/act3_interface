@@ -8,11 +8,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@color/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/title_calculator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B & O BMI CALCULATOR"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/seleccio_home"
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginTop="23dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:cardCornerRadius="16dp"
@@ -39,12 +53,12 @@
         android:id="@+id/seleccio_dona"
         android:layout_width="0dp"
         android:layout_height="180dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/seleccio_home"
         app:layout_constraintTop_toTopOf="parent"
-        app:cardBackgroundColor="@color/background_card"
-        >
+        app:cardBackgroundColor="@color/background_card">
         <LinearLayout
             android:gravity="center"
             android:layout_width="match_parent"
@@ -67,7 +81,7 @@
         android:id="@+id/seleccio_info"
         android:layout_width="match_parent"
         android:layout_height="180dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         app:cardBackgroundColor="@color/background_height_age_weight"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/seleccio_home">
@@ -91,11 +105,13 @@
                 android:layout_weight="0.2"
                 android:text="160"
                 android:textStyle="bold"
+                android:textColor="@color/white"
                 android:textSize="24sp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="inches"/>
+                android:text="inches"
+                android:textColor="@color/white"/>
             <com.google.android.material.slider.Slider
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -113,6 +129,7 @@
         app:layout_constraintBottom_toTopOf="@id/btn_calculate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/seleccio_info"
+        app:cardBackgroundColor="@color/background_height_age_weight"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -127,8 +144,31 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="18"
+                android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="50dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_add"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="@color/background_bottom"
+                    style="@style/Widget.Material3.Button.IconButton.Filled">
+                </com.google.android.material.button.MaterialButton>
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_remove"
+                    android:backgroundTint="@color/background_bottom"
+                    style="@style/Widget.Material3.Button.IconButton.Filled">
+
+                </com.google.android.material.button.MaterialButton>
+
+
+            </LinearLayout>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
     <com.google.android.material.card.MaterialCardView
@@ -137,6 +177,7 @@
         android:layout_height="180dp"
         app:layout_constraintBottom_toTopOf="@id/btn_calculate"
         app:layout_constraintTop_toBottomOf="@id/seleccio_info"
+        app:cardBackgroundColor="@color/background_height_age_weight"
         tools:ignore="MissingConstraints">
         <LinearLayout
             android:layout_width="match_parent"
@@ -152,33 +193,32 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="170"
+                android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="50dp"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    />
+
             <LinearLayout
-                android:layout_width="50dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity=""
-                >
+                android:orientation="horizontal"
+                android:gravity="center">
+
                 <com.google.android.material.button.MaterialButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:icon="@drawable/ic_remove"
-                    style="@style/Widget.Material3.Button.IconButton.Filled">
-                </com.google.android.material.button.MaterialButton>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="50dp"
-                android:layout_height="wrap_content">
-                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_weight_minus"
                     style="@style/Widget.Material3.Button.IconButton.Filled"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:icon="@drawable/ic_add">
-                </com.google.android.material.button.MaterialButton>
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="@color/background_bottom"
+                    app:icon="@drawable/ic_remove"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_weight_plus"
+                    style="@style/Widget.Material3.Button.IconButton.Filled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_add"
+                    android:backgroundTint="@color/background_bottom"/>
             </LinearLayout>
 
 
@@ -186,13 +226,12 @@
     </com.google.android.material.card.MaterialCardView>
     <Button
         android:id="@+id/btn_calculate"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="623dp"
-        android:text="calculate"
-        android:textSize="25dp"
-        tools:ignore="MissingConstraints">
-    </Button>
+        android:text="CALCULATE"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
