@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Act3</string>
+    <string name="title_calculator">B &amp; O BMI CALCULATOR</string>
+    <string name="male">MALE</string>
+    <string name="female">FEMALE</string>
+    <string name="height">HEIGHT</string>
+    <string name="height_default">73</string>
+    <string name="inches">inches</string>
+    <string name="weight">WEIGHT</string>
+    <string name="weight_default">170</string>
+    <string name="age">AGE</string>
+    <string name="age_default">18</string>
+    <string name="calculate">CALCULATE</string>
+
+    <string name="results_title">BMI Results</string>
+    <string name="your_results">Your Results</string>
+    <string name="back_arrow">&lt;</string>
+    <string name="category_default">NORMAL</string>
+    <string name="bmi_default">22.43</string>
+    <string name="description_default">Normal</string>
+    <string name="recalculate">RE-CALCULATE</string>
+
+    <string name="desc_male">Male icon</string>
+    <string name="desc_female">Female icon</string>
 </resources>

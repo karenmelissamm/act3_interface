@@ -16,7 +16,7 @@
             android:id="@+id/title_calculator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="B &amp; O BMI CALCULATOR"
+            android:text="@string/title_calculator"
             android:textSize="20dp"
             android:textColor="@color/white"
             />
@@ -42,11 +42,13 @@
                 android:layout_width="96dp"
                 android:layout_height="96dp"
                 android:src="@drawable/ic_male"
-                android:tint="@color/white"/>
+                android:tint="@color/white"
+                android:contentDescription="@string/desc_male"
+                />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="MALE"
+                android:text="@string/male"
                 android:textSize="24sp"/>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
@@ -70,11 +72,13 @@
                 android:layout_width="96dp"
                 android:layout_height="96dp"
                 android:src="@drawable/ic_female"
-                android:tint="@color/white"/>
+                android:tint="@color/white"
+                android:contentDescription="@string/desc_female"
+                />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="FEMALE"
+                android:text="@string/female"
                 android:textSize="24sp"/>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
@@ -96,7 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.1"
-                android:text="HEIGHT"
+                android:text="@string/height"
                 android:textSize="24sp" />
 
             <TextView
@@ -104,14 +108,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.2"
-                android:text="160"
+                android:text="@string/height_default"
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="inches"
+                android:text="@string/inches"
                 android:textColor="@color/white"/>
             <com.google.android.material.slider.Slider
                 android:layout_width="match_parent"
@@ -142,12 +146,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="AGE"
+                android:text="@string/age"
                 android:textSize="20dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="18"
+                android:text="@string/age_default"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="50dp"/>
@@ -193,11 +197,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
-                android:text="WEIGHT"/>
+                android:text="@string/weight"
+                />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="170"
+                android:text="@string/weight_default"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="50dp"/>
