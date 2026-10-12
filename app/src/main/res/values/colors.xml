@@ -7,6 +7,8 @@
     <color name="background_height_age_weight">#1D1E33</color>
     <color name="background_bottom">#4C4F5E</color>
     <color name="title_color">#8D8E98</color>
-
+    <color name="result_normal">#5FD38D</color>
+    <color name="result_warning">#F5A623</color>
+    <color name="result_danger">#E8505B</color>
 
 </resources>

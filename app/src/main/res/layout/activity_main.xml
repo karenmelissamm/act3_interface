@@ -16,7 +16,8 @@
             android:id="@+id/title_calculator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="B & O BMI CALCULATOR"
+            android:text="B &amp; O BMI CALCULATOR"
+            android:textSize="20dp"
             android:textColor="@color/white"
             />
     </LinearLayout>
@@ -26,7 +27,7 @@
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:cardCornerRadius="16dp"
@@ -53,7 +54,7 @@
         android:id="@+id/seleccio_dona"
         android:layout_width="0dp"
         android:layout_height="180dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="32dp"
         android:layout_marginStart="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/seleccio_home"
@@ -115,7 +116,9 @@
             <com.google.android.material.slider.Slider
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:valueFrom="10"
+                android:valueTo="200">
             </com.google.android.material.slider.Slider>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
@@ -139,7 +142,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="AGE" />
+                android:text="AGE"
+                android:textSize="20dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -188,6 +192,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="20dp"
                 android:text="WEIGHT"/>
             <TextView
                 android:layout_width="wrap_content"
